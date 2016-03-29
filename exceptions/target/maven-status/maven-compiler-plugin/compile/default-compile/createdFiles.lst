@@ -1,5 +1,0 @@
-fr\unice\polytech\isa\exceptions\ExternalPartnerException.class
-fr\unice\polytech\isa\exceptions\PaymentException.class
-fr\unice\polytech\isa\exceptions\UnknownCustomerException.class
-fr\unice\polytech\isa\exceptions\UnknownOrderId.class
-fr\unice\polytech\isa\exceptions\AlreadyExistingCustomerException.class
