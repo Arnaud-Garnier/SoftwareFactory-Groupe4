@@ -2,12 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>fr.unice.polytech.isa</groupId>
+    <artifactId>app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
   <groupId>fr.unice.polytech.isa</groupId>
   <artifactId>wargenerator</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
-
-  <name>wargenerator</name>
+  <name>wargenerator Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
     <properties>
@@ -38,102 +42,43 @@
         </profile>
     </profiles>
 
-  <dependencies>
-  
-		<dependency>
-			<groupId>fr.unice.polytech.isa</groupId>
-			<artifactId>entities</artifactId>
-			<scope>system</scope>
-			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../entities/target/entities-0.0.1-SNAPSHOT.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>fr.unice.polytech.isa</groupId>
-			<artifactId>exceptions</artifactId>
-			<scope>system</scope>
-			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../exceptions/target/exceptions-0.0.1-SNAPSHOT.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>fr.unice.polytech.isa</groupId>
-			<artifactId>interceptors</artifactId>
-			<scope>system</scope>
-			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../interceptors/target/interceptors-0.0.1-SNAPSHOT.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>fr.unice.polytech.isa</groupId>
-			<artifactId>tcf-backend</artifactId>
-			<scope>system</scope>
-			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../j2e/target/tcf-backend.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>fr.unice.polytech.isa</groupId>
-			<artifactId>utils</artifactId>
-			<scope>system</scope>
-			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../utils/target/utils-0.0.1-SNAPSHOT.jar</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>fr.unice.polytech.isa</groupId>
-			<artifactId>webservice</artifactId>
-			<scope>system</scope>
-			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../webservice/target/webservice-0.0.1-SNAPSHOT.jar</systemPath>
-		</dependency>
-		
-  </dependencies>
+    <repositories>
+      <!-- Snapshot repository to access to the latest version of the OpenEJB framework -->
+      <repository>
+          <id>apache-m2-snapshot</id>
+          <name>Apache Snapshot Repository</name>
+          <url>https://repository.apache.org/content/groups/snapshots</url>
+      </repository>
+    </repositories>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.openejb</groupId>
+        <artifactId>arquillian-tomee-embedded</artifactId>
+        <version>${versions.tomee.embedded}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.6</version>
-        <configuration>
-          <webXml>${basedir}/WEB-INF/web.xml</webXml>
-        </configuration>
-      </plugin>
-      <plugin>
-            <groupId>org.apache.openejb.maven</groupId>
-            <artifactId>tomee-maven-plugin</artifactId>
-            <version>${versions.tomee.embedded}</version>
-            <configuration>
-                    <!-- From TomEE to TomEE+ to support the web services stack -->
-                <tomeeClassifier>plus</tomeeClassifier>
-                <args>-Xmx512m -XX:PermSize=256m</args>
-                <deployOpenEjbApplication>true</deployOpenEjbApplication>
-            </configuration>
-        </plugin>
+      <groupId>org.apache.openejb.maven</groupId>
+      <artifactId>tomee-maven-plugin</artifactId>
+      <version>${versions.tomee.embedded}</version>
+      <configuration>
+      <!-- From TomEE to TomEE+ to support the web services stack -->
+      <tomeeClassifier>plus</tomeeClassifier>
+      <args>-Xmx512m -XX:PermSize=256m</args>
+      <deployOpenEjbApplication>true</deployOpenEjbApplication>
+      </configuration>
+    </plugin>
     </plugins>
-            <resources>
-           	<resource>
-                <directory>${basedir}/../entities/target/</directory>
-            </resource>
-            <resource>
-                <directory>${basedir}/../exceptions/target/</directory>
-            </resource>
-            <resource>
-                <directory>${basedir}/../interceptors/target/</directory>
-            </resource>
-            <resource>
-                <directory>${basedir}/../exceptions/target/</directory>
-            </resource>       
-            	<resource>
-                <directory>${basedir}/../j2e/target/</directory>
-            </resource>
-            <resource>
-                <directory>${basedir}/../utils/target/</directory>
-            </resource>
-            <resource>
-                <directory>${basedir}/../webservice/target/</directory>
-            </resource>
-        </resources>
+    <finalName>wargenerator</finalName>
   </build>
-
 </project>

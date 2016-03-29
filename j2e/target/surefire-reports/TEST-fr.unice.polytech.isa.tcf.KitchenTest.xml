@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.unice.polytech.isa.tcf.KitchenTest" time="0.124" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="fr.unice.polytech.isa.tcf.KitchenTest" time="0.1" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.8.0_40\jre\bin"/>
     <property name="java.vm.version" value="25.40-b25"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="c:/Users/Arnaud/Documents/SI4-Archives/S2/DevOps/Software_Factory/j2e"/>
+    <property name="maven.multiModuleProjectDirectory" value="c:/Users/Arnaud/Documents/SI4-Archives/S2/DevOps/Local-SF/j2e"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="c:\Users\Arnaud\Documents\SI4-Archives\S2\DevOps\Software_Factory\j2e"/>
+    <property name="user.dir" value="c:\Users\Arnaud\Documents\SI4-Archives\S2\DevOps\Local-SF\j2e"/>
     <property name="java.runtime.version" value="1.8.0_40-b26"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="c:\Program Files\Java\jdk1.8.0_40\jre\lib\endorsed"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="c:/Program Files (x86)/Maven/apache-maven-3.3.9/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="c:\Program Files\Java\jdk1.8.0_40\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\Arnaud\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Windows\system32;c:\Windows;c:\Windows\System32\Wbem;c:\Windows\System32\WindowsPowerShell\v1.0;c:\altera\91\quartus\bin;c:\Program Files (x86)\Skype\Phone\;c:\Windows\system32\config\systemprofile\.dnx\bin;c:\Program Files\Microsoft DNX\Dnvm\;c:\Program Files (x86)\Maven\apache-maven-3.3.9\bin;c:\Program Files (x86)\Apache Software Foundation\apache-maven-3.2.5\bin;."/>
+    <property name="java.library.path" value="c:\Program Files\Java\jdk1.8.0_40\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\Arnaud\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Windows\system32;c:\Windows;c:\Windows\System32\Wbem;c:\Windows\System32\WindowsPowerShell\v1.0;%QUARTUS_ROOTDIR%\bin;c:\Windows\system32\config\systemprofile\.dnx\bin;c:\Program Files\Microsoft DNX\Dnvm\;c:\Program Files (x86)\GtkSharp\2.12\bin;c:\Users\Arnaud\.dnx\bin;c:\Program Files (x86)\Maven\apache-maven-3.3.9\bin;c:\Program Files (x86)\Apache Software Foundation\apache-maven-3.2.5\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="c:\Program Files\Java\jdk1.8.0_40\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,5 +62,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="processCommand" classname="fr.unice.polytech.isa.tcf.KitchenTest" time="0.124"/>
+  <testcase name="processCommand" classname="fr.unice.polytech.isa.tcf.KitchenTest" time="0.1"/>
 </testsuite>
