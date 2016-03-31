@@ -7,9 +7,9 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.unice.polytech.isa-backend</groupId>
-	<artifactId>app</artifactId>
+	<artifactId>tcf-backend</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>ISA :: The Cookie Factory :: J2E Backend</name>
 
 	<properties>

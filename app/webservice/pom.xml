@@ -45,25 +45,25 @@
 		<dependency>
 			<groupId>fr.unice.polytech.isa-backend</groupId>
 			<artifactId>tcf-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa-backend</groupId>
 			<artifactId>entities</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa-backend</groupId>
 			<artifactId>exceptions</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa-backend</groupId>
 			<artifactId>interceptors</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>
