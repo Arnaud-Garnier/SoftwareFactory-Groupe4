@@ -6,7 +6,7 @@
 		<artifactId>app</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>fr.unice.polytech.isa</groupId>
+	<groupId>fr.unice.polytech.isa-backend</groupId>
 	<artifactId>interceptors</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -43,17 +43,13 @@
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>entities</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../entities/target/entities-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>utils</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../utils/target/utils-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 	</dependencies>
@@ -76,12 +72,12 @@
 		<repository>
 			<id>central</id>
 			<name>Artifactory4-releases</name>
-			<url>http://localhost:8081/artifactory/CookieFactory</url>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Artifactory4-snapshots</name>
-			<url>http://localhost:8081/artifactory/CookieFactory</url>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>

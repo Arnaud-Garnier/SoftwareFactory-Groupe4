@@ -6,7 +6,7 @@
 		<artifactId>app</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>fr.unice.polytech.isa</groupId>
+	<groupId>fr.unice.polytech.isa-backend</groupId>
 	<artifactId>webservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -45,33 +45,25 @@
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>tcf-backend</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../j2e/target/tcf-backend.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>entities</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../entities/target/entities-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>exceptions</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../exceptions/target/exceptions-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>interceptors</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../interceptors/target/interceptors-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<build>
@@ -92,12 +84,12 @@
 		<repository>
 			<id>central</id>
 			<name>Artifactory4-releases</name>
-			<url>http://localhost:8081/artifactory/CookieFactory</url>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Artifactory4-snapshots</name>
-			<url>http://localhost:8081/artifactory/CookieFactory</url>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 

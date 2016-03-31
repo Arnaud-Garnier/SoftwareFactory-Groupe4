@@ -1,12 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>fr.unice.polytech.isa</groupId>
-		<artifactId>app</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
-	<groupId>fr.unice.polytech.isa</groupId>
+	<groupId>fr.unice.polytech.isa-backend</groupId>
 	<artifactId>utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -54,17 +49,13 @@
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>entities</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../entities/target/entities-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>fr.unice.polytech.isa</groupId>
 			<artifactId>exceptions</artifactId>
-			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
-			<systemPath>${basedir}/../exceptions/target/exceptions-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 	</dependencies>
@@ -82,17 +73,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>Artifactory4-releases</name>
-			<url>http://localhost:8081/artifactory/CookieFactory</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Artifactory4-snapshots</name>
-			<url>http://localhost:8081/artifactory/CookieFactory</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>

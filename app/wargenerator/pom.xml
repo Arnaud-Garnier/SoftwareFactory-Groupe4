@@ -7,7 +7,7 @@
     <artifactId>app</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>fr.unice.polytech.isa</groupId>
+  <groupId>fr.unice.polytech.isa-backend</groupId>
   <artifactId>tcf-backend</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
