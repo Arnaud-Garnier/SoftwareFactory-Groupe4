@@ -30,16 +30,16 @@
 	<repositories>
 <!-- Snapshot repository to access to the latest version of the OpenEJB framework -->
 <repository>
-<id>apache-m2-snapshot</id>
-<name>Apache Snapshot Repository</name>
-<url>https://repository.apache.org/content/groups/snapshots</url>
+		<id>apache-m2-snapshot</id>
+		<name>Apache Snapshot Repository</name>
+		<url>https://repository.apache.org/content/groups/snapshots</url>
 </repository>
 <repository>
-<id>snapshots</id>
-<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-snapshot-local</url>
-<releases>
-<enabled>false</enabled>
-</releases>
+		<id>snapshots</id>
+		<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+		<releases>
+		<enabled>false</enabled>
+		</releases>
 </repository>
 </repositories>
 </project>
