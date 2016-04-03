@@ -59,6 +59,36 @@
 		</repository>
 	</repositories>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/plugins-release</url>
+			<snapshots>
+			<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>snapshots</id>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/plugins-snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>Artifactory4-releases</name>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Artifactory4-snapshots</name>
+			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.openejb</groupId>
@@ -159,16 +189,5 @@
 		</plugins>
 		<finalName>tcf-backend</finalName>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>Artifactory4-releases</name>
-			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Artifactory4-snapshots</name>
-			<url>http://erebe-vm6.i3s.unice.fr/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
+
 </project>
