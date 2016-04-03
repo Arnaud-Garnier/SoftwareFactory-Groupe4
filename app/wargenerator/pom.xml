@@ -171,6 +171,24 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
+		<dependency>
+			<groupId>fr.unice.polytech.isa-backend</groupId>
+			<artifactId>tcf-backend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.unice.polytech.isa-backend</groupId>
+			<artifactId>utils</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.unice.polytech.isa-backend</groupId>
+			<artifactId>webservice</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -184,6 +202,12 @@
 					<args>-Xmx512m -XX:PermSize=256m</args>
 					<deployOpenEjbApplication>true</deployOpenEjbApplication>
 				</configuration>
+			</plugin>
+
+			 <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
 			</plugin>
 
 		</plugins>
