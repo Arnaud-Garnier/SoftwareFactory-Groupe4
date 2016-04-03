@@ -8,7 +8,7 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>fr.unice.polytech.isa-backend</groupId>
-	<artifactId>tcf-backsend</artifactId>
+	<artifactId>tcf-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>tcf-backend Maven Webapp</name>
