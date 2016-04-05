@@ -11,5 +11,4 @@ j2e/target/*
 **/.project
 **/.settings/
 
-client/src/test/resources/
 app/dotNet/server.exe
