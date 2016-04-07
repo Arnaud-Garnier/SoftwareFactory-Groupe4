@@ -1,7 +1,7 @@
 package fr.unice.polytech.isa.entities;
 
 public enum Cookies {
-CASSAGE
+
 	CHOCOLALALA("Chocolalala", 1.30),
 	DARK_TEMPTATION("Dark Temptation", 1.90),
 	SOO_CHOCOLATE("Soo Chocolate", 1.25);
