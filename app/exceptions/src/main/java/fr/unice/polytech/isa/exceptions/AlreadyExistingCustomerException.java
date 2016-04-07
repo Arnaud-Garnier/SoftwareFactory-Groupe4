@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 
 public class AlreadyExistingCustomerException extends Exception implements Serializable {
-
+CASSAGE
 	private String conflictingName;
 
 	public AlreadyExistingCustomerException(String name) {
