@@ -10,6 +10,9 @@ import javax.ws.rs.core.MediaType;
 
 public class BankAPI {
 
+	
+	
+	
 	private String url;
 
 	public BankAPI(String host, String port) {
